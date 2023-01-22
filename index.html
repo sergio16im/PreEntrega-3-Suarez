@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La recocha</title>
+    <link rel="shorcut icon" href="./images/logo.jpg">
+   
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="container-fluid bg-primary">
+        <section class=" container d-grid gap-2 d-md-flex justify-content-md-end">
+          
+            <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+              Ciudad
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+              <li><button class="dropdown-item" type="button">Bucaramanga</button></li>
+              <li><button class="dropdown-item" type="button">Cali</button></li>
+              <li><button class="dropdown-item" type="button">Bogota</button></li>
+            </ul>
+            <a href="./pages/error.html" class="btn btn-success">Inicio de sesion</a>
+             
+           
+        </section>
+        <section class=" container menu">
+          <!--menu de navegacion-->
+           <nav class="navbar navbar-expand-lg navbar-dark" > 
+            <div class="container-fluid">
+              <a class="navbar-brand " href="index.html">
+                <img src="./images/campo-de-futbol.png" alt="" width="30" height="24" >
+                La recocha
+              </a>             
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link active " aria-current="page" href="./index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link " href="./pages/canchas.html">Canchas</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link " href="./pages/jugadores.html">Jugadores</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link " href="./pages/torneos.html">Torneos</a>
+                    </li> 
+                    <li class="nav-item ">
+                      <a class="nav-link " href="./pages/contacto.html">Contacto</a>
+                    </li>                     
+                  </ul>
+                </div>
+              </div>
+            </div>
+            </nav>
+          
+        
+        </section>
+    </header>
+      <main >
+        <div>
+          <h2 class="text-center">Promociones</h2>
+        </div>
+        <section class="d-none d-md-block container">
+          <div id="carouselExampleInterval" class="carousel slide-container" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="5000">
+                <img src="./images/carrusel_1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="5000">
+                <img src="./images/carrusel_2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="5000">
+                <img src="./images/carrusel_3.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        
+        </section>
+        <div>
+          <h2 class="text-center">Servicios</h2>
+        </div>
+        <section class="d-flex gap-3 justify-content-center flex-wrap">
+          <div class="card" style="width: 18rem;">
+            <img src="./images/icono_canchas.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Canchas</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="./pages/canchas.html" class="btn btn-success">Alquilar cancha</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="./images/icono_jugador.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Jugadores</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="./pages/jugadores.html" class="btn btn-success">Convocar jugadores</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="./images/torneo.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Torneos</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="./pages/torneos.html" class="btn btn-success">Ver torneos</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="./images/eventos.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Eventos</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="./pages/error.html" class="btn btn-success">Planear eventos</a>
+            </div>
+          </div>
+        </section>
+      </main>
+  
+      <footer class="container-fluid bg-primary">       
+        <div class=" container d-flex justify-content-evenly">
+        <a href="https://www.facebook.com/lafutbolerabucaramanga"target="_blank">
+          <img class="redes__sociales"src="./images/facebook .png" alt="" >
+        </a>
+        <a href="https://instagram.com/lafutbolerabucaramanga?igshid=MDM4ZDc5MmU="target="_blank">
+       <img class="redes__sociales"src="./images/instagram.png" alt="">
+       </a>
+        <a href="https://twitter.com/FIFAcom"target="_blank">
+          <img class="redes__sociales"src="./images/twitter.png" alt="">
+       </a>
+        <a href="https://www.tiktok.com/@fifaworldcup?lang=es"target="_blank">
+          <img class="redes__sociales"src="./images/tik-tok.png" alt="">
+        </a>    
+      </div>  
+      </footer>
+      <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
