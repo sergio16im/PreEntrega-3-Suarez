@@ -62,7 +62,7 @@
         
         </section>
     </header>
-    <main class="container-fluid">
+    <main class="container">
       <div class="row justify-content-center ">
         <aside class=" col-12  col-sm-6 col-md-4  ">
             <div class="card" style="width:100%;">
@@ -87,8 +87,7 @@
             </aside>
         <section class="col-12  col-md-8">
           <h1>Horarios de alquiler</h1>
-          <!---Horaios disponibles para dispositivos moviles-->
-          <!---Horarios disponibles paa desktops-->
+          
           <div class="accordion" id="accordionExample">
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingOne">
@@ -104,7 +103,7 @@
                         Lunes 16 de enero
                       </div>
                       <div class="col-5 col-sm-3  gy-3">
-                        <!--Modal de Horarios-->
+                        
                         <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
                           <div class="modal-dialog modal-dialog-scrollable">
                             <div class="modal-content">
@@ -118,7 +117,6 @@
                                       <div class="col-5 col-sm-9 gy-3"> 4-5 PM
 
                                       </div>
-                                      <!--WARD AQUI SE REALIZARON LAS MODIFICACIONES PARA AJUSTAR LA PESTAÑA DE RESERVA  -->
                                       <div class="col-5 col-sm-3 gy-3">
                                         <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">Reservar</button>
                                       </div>
@@ -128,7 +126,7 @@
 
                                     </div>
                                     <div class="col-5 col-sm-3 gy-3">
-                                      <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">Reservar</button>
+                                      <button class="btn btn-primary disabled" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">Reservar</button>
                                     </div>
                                    </div>
                                    <div class="row justify-content-between">
@@ -136,36 +134,69 @@
 
                                     </div>
                                     <div class="col-5 col-sm-3 gy-3">
-                                      <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">Reservar</button>
+                                      <button class="btn btn-primary disabled" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">Reservar</button>
                                     </div>
                                    </div>
                                 </div>
                               </div>
                               <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                               </div>
                             </div>
                           </div>
                         </div>
-                        <!--Modal de Rerserva BEGIN-->
-                        <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
-                          <div class="modal-dialog modal-dialog-centered">
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalToggleLabel2">Modal 2</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                              </div>
-                              <div class="modal-body">
-                                Hide this modal and show the first with the button below.
-                              </div>
-                              <div class="modal-footer">
-                                <button class="btn btn-secondary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">Volver a horarios</button>
-                              <button class="btn btn-primary">Pagar</button>
+                          
+                          <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                            <div class="modal-dialog modal-dialog-centered">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalToggleLabel2">Reserva</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                  <div class="container-fluid">
+                                    <div class="row justify-content-between">
+                                      <div class="col-6">Nombre de usuario</div>
+                                      <div class="col-4">Sergio Suarez</div>
+                                      <div class="col-6">Cancha reservada</div>
+                                      <div class="col-4">Cancha #1</div>
+                                      <div class="col-6">Fecha de reserva</div>
+                                      <div class="col-4">16 de Enero de 2023</div>
+                                      <div class="col-6">Precio</div>
+                                      <div class="col-4">$20.000</div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="modal-footer">
+                                  <button class="btn btn-secondary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">Volver a horarios</button>
+                                <button class="btn btn-primary" data-bs-target="#exampleModalToggle5" data-bs-toggle="modal" data-bs-dismiss="modal">Pagar</button>
+                                </div>
                               </div>
                             </div>
                           </div>
-                        </div>
-                        <!--Modal de Rerserva END-->
+                          
+                          <div class="modal fade" id="exampleModalToggle5" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                            <div class="modal-dialog modal-dialog-centered">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalToggleLabel2">Reserva exitosa</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                  <div class="container-fluid">
+                                    <div class="row justify-content-between">
+                                      <h3 class="text-success text-center">¡Gracias por reservar con nosotros!</h3>
+                                      <h5 class="text-center">Un correo con el comprobante ha sido enviado a tu correo electrónico.</h5>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="modal-footer">
+                                  <button class="btn btn-secondary"  data-bs-dismiss="modal">Cerrar</button>
+                                
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                         <a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Ver Horarios</a>
                       </div>  
                       </div>                    
@@ -176,11 +207,11 @@
                       </div>
                       <div class="col-5 col-sm-3  gy-3">
                         <!--Modal de Horarios-->
-                        <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                        <div class="modal fade" id="exampleModalToggle3" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
                           <div class="modal-dialog modal-dialog-scrollable">
                             <div class="modal-content">
                               <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalToggleLabel">Horarios 16 de enero</h5>
+                                <h5 class="modal-title" id="exampleModalToggleLabel">Horarios 17 de enero</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                               </div>
                               <div class="modal-body">
@@ -190,7 +221,7 @@
 
                                       </div>
                                       <div class="col-3">
-                                        <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">Reservar</button>
+                                        <button class="btn btn-primary" data-bs-target="#exampleModalToggle4" data-bs-toggle="modal" data-bs-dismiss="modal">Reservar</button>
                                       </div>
                                   </div>
                                 </div>
@@ -202,25 +233,58 @@
                           </div>
                         </div>
                         <!--Modal de Rerserva-->
-                        <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                        <div class="modal fade" id="exampleModalToggle4" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
                           <div class="modal-dialog modal-dialog-centered">
                             <div class="modal-content">
                               <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalToggleLabel2">Modal 2</h5>
+                                <h5 class="modal-title" id="exampleModalToggleLabel4">Reserva</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                               </div>
                               <div class="modal-body">
-                                Hide this modal and show the first with the button below.
+                                <div class="container-fluid">
+                                  <div class="row justify-content-between">
+                                    <div class="col-6">Nombre de usuario</div>
+                                    <div class="col-4">Alfredo Parada</div>
+                                    <div class="col-6">Cancha reservada</div>
+                                    <div class="col-4">Cancha #1</div>
+                                    <div class="col-6">Fecha de reserva</div>
+                                    <div class="col-4">17 de Enero de 2023</div>
+                                    <div class="col-6">Precio</div>
+                                    <div class="col-4"><strong>$20.000</strong></div>
+                                  </div>
+                                </div>
                               </div>
                               <div class="modal-footer">
-                                <button class="btn btn-secondary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">Volver a horarios</button>
-                              <button class="btn btn-primary">Pagar</button>
+                                <button class="btn btn-secondary" data-bs-target="#exampleModalToggle3" data-bs-toggle="modal" data-bs-dismiss="modal">Volver a horarios</button>
+                              <button class="btn btn-primary" data-bs-target="#exampleModalToggle6" data-bs-toggle="modal" data-bs-dismiss="modal">Pagar</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="modal fade" id="exampleModalToggle6" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                          <div class="modal-dialog modal-dialog-scrollable">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalToggleLabel">Horarios 17 de enero</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                <div class="container-fluid">
+                                  <div class="row justify-content-between">
+                                    <h3 class="text-success text-center">¡Gracias por reservar con nosotros!</h3>
+                                    <h5 class="text-center">Un correo con el comprobante ha sido enviado a tu correo electrónico.</h5>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                               </div>
                             </div>
                           </div>
                         </div>
                         <!--Modal de Rerserva-->
-                        <a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Ver Horarios</a>
+                        <a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle3" role="button">Ver Horarios</a>
                       </div>
                       </div>
                     
@@ -245,7 +309,7 @@
                         Viernes 20  de enero
                       </div>
                       <div class="col-5 col-sm-3 gy-3">
-                        <button class="btn btn-primary">Ver Horarios</button>
+                        <button class="btn btn-primary disabled">Ver Horarios</button>
                       </div>
                     </div>
                     <div class="row justify-content-between">
@@ -253,7 +317,7 @@
                         Sabado 21  de enero
                       </div>
                       <div class="col-5 col-sm-3 gy-3">
-                        <button class="btn btn-primary">Ver Horarios</button>
+                        <button class="btn btn-primary disabled">Ver Horarios</button>
                       </div>
                     </div>
                     <div class="row justify-content-between">
@@ -261,7 +325,7 @@
                         Domingo 22 de enero
                       </div>
                       <div class="col-5 col-sm-3  gy-3">
-                        <button class="btn btn-primary">Ver Horarios</button>
+                        <button class="btn btn-primary disabled">Ver Horarios</button>
                       </div>
                     </div>
                   </div>
@@ -276,7 +340,7 @@
               </h2>
               <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  <p class="text-danger">Lo sentimos, todos los horarios ya han sido reservados.</p>
                 </div>
               </div>
             </div>
@@ -288,7 +352,7 @@
               </h2>
               <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  <p class="text-danger">Lo sentimos, todos los horarios ya han sido reservados.</p>
                 </div>
               </div>
             </div>
@@ -301,37 +365,38 @@
         </section>
       </div>
     </main>
-    <footer  class="container-fluid bg-secondary">
-    <div class="row  justify-content-evenly">
-      <div class="col-12 col-sm-3"><h2 class="text-white">La recocha</h2>
-        <div><p class="text-white">Copyright © 2023</p></div>
-      </div>
-        <div class="col-12 col-sm-3">
-          <h4 class="text-white">Links de interes</h4>
-          <div class="list-group">
-            <a href="./contacto.html" class="list-group-item bg-secondary text-white">Contactenos</a>
-            <a href="./contacto.html" class="list-group-item bg-secondary text-white">Preguntas frecuentes</a>
-            <a href="./error.html" class="list-group-item bg-secondary text-white">Acerca de nosotros</a>
+    <footer  class="container-fluid  bg-secondary">
+      <div class="container-xxl">
+        <div class="row  justify-content-evenly">
+          <div class="col-12 col-sm-3"><h2 class="text-white">La recocha</h2>
+            <div><p class="text-white">Copyright © 2023</p></div>
           </div>
+            <div class="col-12 col-sm-3">
+              <h4 class="text-white">Links de interes</h4>
+              <div class="list-group">
+                <a href="./contacto.html" class="list-group-item bg-secondary text-white">Contactenos</a>
+                <a href="./contacto.html" class="list-group-item bg-secondary text-white">Preguntas frecuentes</a>
+                <a href="./error.html" class="list-group-item bg-secondary text-white">Acerca de nosotros</a>
+              </div>
+            </div>
+            <div class="col-12 col-sm-3">
+              
+                <h4 class="text-white">Siguenos en</h4>
+              <a href="https://www.facebook.com/lafutbolerabucaramanga"target="_blank">
+                  <img class="redes__sociales"src="../images/facebook-.svg" alt="facebook logo" >
+              </a>
+              <a href="https://instagram.com/lafutbolerabucaramanga?igshid=MDM4ZDc5MmU="target="_blank">
+                  <img class="redes__sociales"src="../images/instagram.svg" alt=" isntagram logo">
+              </a>
+              <a href="https://twitter.com/FIFAcom"target="_blank">
+                  <img class="redes__sociales"src="../images/twitter.svg" alt=" Twitter logo">
+              </a>
+              <a href="https://www.tiktok.com/@fifaworldcup?lang=es"target="_blank">
+                  <img class="redes__sociales"src="../images/tik-tok.svg" alt=" tik-tok logo">
+              </a>
+            </div>
         </div>
-        <div class="col-12 col-sm-3">
-          
-            <h4 class="text-white">Siguenos en</h4>
-          <a href="https://www.facebook.com/lafutbolerabucaramanga"target="_blank">
-              <img class="redes__sociales"src="../images/facebook-.svg" alt="facebook logo" >
-          </a>
-          <a href="https://instagram.com/lafutbolerabucaramanga?igshid=MDM4ZDc5MmU="target="_blank">
-              <img class="redes__sociales"src="../images/instagram.svg" alt=" isntagram logo">
-          </a>
-          <a href="https://twitter.com/FIFAcom"target="_blank">
-              <img class="redes__sociales"src="../images/twitter.svg" alt=" Twitter logo">
-          </a>
-          <a href="https://www.tiktok.com/@fifaworldcup?lang=es"target="_blank">
-              <img class="redes__sociales"src="../images/tik-tok.svg" alt=" tik-tok logo">
-          </a>
-        </div>
-    </div>
-        
+      </div>
      </footer >
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
