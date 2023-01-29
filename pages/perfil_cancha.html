@@ -10,7 +10,7 @@
 </head>
 <body>
     <header class="container-fluid bg-secondary">
-        <section class=" container-xxl d-grid gap-2 d-md-flex justify-content-md-end">
+        <section class=" container d-grid gap-2 d-md-flex justify-content-md-end">
           
             <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
               Ciudad
@@ -24,7 +24,7 @@
              
            
         </section>
-        <section class=" container-xxl menu">
+        <section class=" container menu">
           <!--menu de navegacion-->
            <nav class="navbar navbar-expand-lg navbar-dark" > 
             <div class="container-fluid">
@@ -215,15 +215,31 @@
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                               </div>
                               <div class="modal-body">
-                                <div class="container-fluid">
-                                  <div class="row">
-                                      <div class="col-9"> 5-4 PM
+                                <div class="container-fluid overflow-hidden">
+                                  <div class="row ">
+                                      <div class="col-9 gy-3"> 4-5 PM
 
                                       </div>
-                                      <div class="col-3">
+                                      <div class="col-3 gy-3">
                                         <button class="btn btn-primary" data-bs-target="#exampleModalToggle4" data-bs-toggle="modal" data-bs-dismiss="modal">Reservar</button>
                                       </div>
                                   </div>
+                                  <div class="row">
+                                    <div class="col-9"> 5-6 PM
+
+                                    </div>
+                                    <div class="col-3 gy-3">
+                                      <button class="btn btn-primary disabled" data-bs-target="#exampleModalToggle4" data-bs-toggle="modal" data-bs-dismiss="modal">Reservar</button>
+                                    </div>
+                                </div>
+                                <div class="row ">
+                                  <div class="col-9 gy-3"> 6-7 PM
+
+                                  </div>
+                                  <div class="col-3 gy-3">
+                                    <button class="btn btn-primary disabled" data-bs-target="#exampleModalToggle4" data-bs-toggle="modal" data-bs-dismiss="modal">Reservar</button>
+                                  </div>
+                              </div>
                                 </div>
                               </div>
                               <div class="modal-footer">
