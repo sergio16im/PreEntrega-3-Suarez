@@ -37,8 +37,8 @@ body {
     opacity: 100%; } }
   body footer .redes__sociales {
     padding-top: 0.2rem;
-    height: 30px;
-    width: 30px;
+    height: 20px;
+    width: 20px;
     transition: all 0.3s ease; }
     body footer .redes__sociales:hover {
       -webkit-transform: scale(1.2);
