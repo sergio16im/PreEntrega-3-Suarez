@@ -8,50 +8,146 @@
     <link rel="shorcut icon" href="../images/campo-de-futbol.png">
     <link rel="stylesheet" href="../css/style.css">
 </head>
-<body id="grilla">
-   <main>
-    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalToggleLabel">Modal 1</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+<body >
+  <header></header>
+   <main class="container-xxl">
+    <h2 class="text-center">Inicio de sesion</h2>
+    
+    <ul class="nav nav-pills justify-content-center mb-3" id="pills-tab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Director técnico</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Jugador</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Administrador de cancha</button>
+      </li>
+    </ul>
+    <div class="tab-content" id="pills-tabContent">
+      <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+        <div class="row justify-content-evenly">
+            <div clas="col-md-8  col-12">
+            <div class="row  justify-content-center">
+              
+            <form class="col-sm-6 col-12">
+            
+                <div class="col-12">
+                  <label for="inputUsuario" class="form-label">Usuario</label>
+                  <input type="text" class="form-control" id="inputUsuario" placeholder="usuario" required>
+                </div>
+                <div class="col-12 mb-3">
+                  <label for="inputPassword" class="form-label">Contraseña</label>
+                  <input type="password" class="form-control" id="inputPassword" placeholder="contraseña" required>
+                </div>
+                <div class="col-12 mb-3"><a href="contacto.html">¿Has olvidado tu contraseña?</a></div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-success mb-3">Iniciar sesion</button>
+                </div>          
+                
+              
+            </form>
+              
+            </div>
           </div>
-          <div class="modal-body">
-            <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">Open second modal</button>
-
           </div>
-          <div class="modal-footer">
+      </div>
+      <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+        <div class="row justify-content-evenly">
+          <div clas="col-md-8  col-12">
+          <div class="row  justify-content-center">
+            
+          <form class="col-sm-6 col-12">
+          
+              <div class="col-12">
+                <label for="inputDocumento" class="form-label">Numero de documento</label>
+                  <input type="number" class="form-control" id="inputDocumento" placeholder="numero de documento" required>
+              </div>
+              <div class="col-12 mb-3">
+                <label for="inputPassword" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="inputPassword" placeholder="contraseña" required>
+              </div>
+              <div class="col-12 mb-3"><a href="contacto.html">¿Has olvidado tu contraseña?</a></div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-success mb-3">Iniciar sesion</button>
+              </div>          
+              
+            
+          </form>
+            
           </div>
         </div>
-      </div>
-    </div>
-    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalToggleLabel2">Modal 2</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            Hide this modal and show the first with the button below.
-          </div>
-          <div class="modal-footer">
-            <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">Back to first</button>
-          </div>
         </div>
       </div>
-    </div>
-    <a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Open first modal</a>
-   </main>
+      <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
 
-   <footer id="footer">
-        Lorem ipsum dolor sit, 
-        amet consectetur adipisicing elit. Necessitatibus impedit sint accusantium recusandae rerum
-         harum nesciunt exercitationem, nihil tempore vero similique ullam eos vel cumque illo tenetur
-          accusamus repellat. Recusandae?
+        <div class="row justify-content-evenly">
+          <div clas="col-md-8  col-12">
+          <div class="row  justify-content-center">
+            
+          <form class="col-sm-6 col-12">
+          
+              <div class="col-12">
+                <label for="inputEmail" class="form-label">Email</label>
+                <input type="email" class="form-control" id="inputEmail" placeholder="email" required>
+              </div>
+              <div class="col-12 mb-3">
+                <label for="inputPassword" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="inputPassword" placeholder="contraseña" required>
+              </div>
+              <div class="col-12 mb-3"><a href="contacto.html">¿Has olvidado tu contraseña?</a></div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-success mb-3">Iniciar sesion</button>
+              </div>          
+              
+            
+          </form>
+            
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>  
+      
+    
+     
         
-   </footer>
+        
+      
+   </main>
+   <footer  class="container-fluid  bg-secondary">
+    <div class="container-xxl">
+      <div class="row  justify-content-evenly">
+        <div class="col-12 col-sm-3"><h2 class="text-white">La recocha</h2>
+          <div><p class="text-white">Copyright © 2023</p></div>
+        </div>
+          <div class="col-12 col-sm-3 overflow-hidden">
+            <h4 class="text-white">Links de interés</h4>
+            <div class="list-group-flush">
+              <a href="./contacto.html" class="list-group-item bg-secondary text-white pb-2">Contactenos</a>
+              <a href="./preguntas_frecuentes.html" class="list-group-item bg-secondary text-white pb-2">Preguntas frecuentes</a>
+              <a href="./error.html" class="list-group-item bg-secondary text-white pb-2">Acerca de nosotros</a>
+            </div>
+          </div>
+          <div class="col-12 col-sm-3">
+            
+              <h4 class="text-white">Siguenos en</h4>
+            <a href="https://www.facebook.com/lafutbolerabucaramanga"target="_blank">
+                <img class="redes__sociales"src="../images/facebook-.svg" alt="facebook logo" >
+            </a>
+            <a href="https://instagram.com/lafutbolerabucaramanga?igshid=MDM4ZDc5MmU="target="_blank">
+                <img class="redes__sociales"src="../images/instagram.svg" alt=" isntagram logo">
+            </a>
+            <a href="https://twitter.com/FIFAcom"target="_blank">
+                <img class="redes__sociales"src="../images/twitter.svg" alt=" Twitter logo">
+            </a>
+            <a href="https://www.tiktok.com/@fifaworldcup?lang=es"target="_blank">
+                <img class="redes__sociales"src="../images/tik-tok.svg" alt=" tik-tok logo">
+            </a>
+          </div>
+      </div>
+    </div>
+   </footer >
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 </body>
