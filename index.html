@@ -29,7 +29,7 @@
            
         </section>
         <section class=" container menu">
-          <!--menu de navegacion-->
+          
            <nav class="navbar navbar-expand-lg navbar-dark" > 
             <div class="container-fluid">
               <a class="navbar-brand " href="index.html">
@@ -75,27 +75,27 @@
         </div>
         <section class="d-block d-md-none container">
           <div class="row justify-content-center">
-            <div class="col-sm-5">
-              <div class="card text-white bg-danger mb-3">
+            
+              <div class="card col-sm-5 text-white bg-danger mb-3 mx-3">
                 
                 <a href="./pages/eventos.html " class="text-decoration-none text-white">
                   <div class="card-header">Oferta de tiempo limitada</div>
                   <div>
                     <h5 class="card-title mx-3">¡Semana  de regreso escolar!</h5>
-                    <p class="card-text mx-3">Inscribe a tus hijos en nuestras escuelas de formación y ten la posibilidad de ganar una membresía premium.</p>
+                    <p class="card-text mx-3">Inscribe a tus hijos en nuestras escuelas de formación y ten la posibilidad de ganar una membresía premium</p>
                   </div>
                 </a>
                 
               </div>
               
-            </div>
-            <div class="col-sm-5">
-              <div class="card text-white bg-danger mb-3">
-                <a href="./pages/perfil_cancha.html " class="text-decoration-none text-white">
+            
+            
+              <div class="col-sm-5 card text-white bg-danger mx-3 mb-3">
+                <a href="./pages/canchas.html" class="text-decoration-none text-white">
                   <div class="card-header">Oferta de tiempo limitada</div>
                   <div>
                     <h5 class="card-title mx-3">¡Lunes madrugador!</h5>
-                    <p class="card-text mx-3">Disfruta de un 10% al reservar en los primeros horarios de las canchas.</p>
+                    <p class="card-text mx-3">Disfruta de un 10% al reservar en los primeros horarios de las canchas</p>
                   </div>
                 
                 </a>
@@ -103,21 +103,22 @@
                </div>
               
             
-            </div>
-            <div class="col-sm-5">
-              <div class="card text-white bg-success mb-3">
+            
+            
+              <div class="card col-sm-5 text-white bg-success mx-3 mb-3">
                   <a href="./pages/registro.html " class="text-decoration-none text-white">
                     <div class="card-header">Promoción</div>
                     <div>
                       <h5 class="card-title mx-3">¡Se un  nuevo Director técnico!</h5>
-                      <p class="card-text mx-3">Aprovecha un 10% de descuento en la reserva de tus 10 primeros partidos</p>           </div>
+                      <p class="card-text mx-3">Aprovecha un 10% de descuento en la reserva de tus 10 primeros partidos</p>         
+                    </div>
                   
                   </a>
                   
               </div>
-            </div>
-            <div class="col-sm-5">
-              <div class="card text-white bg-success mb-3 h-sm-100">
+            
+            
+              <div class="card  col-sm-5 text-white bg-success mb-3 mx-3">
                 <a href="./pages/contacto.html " class="text-decoration-none text-white">
                   <div class="card-header">Promoción</div>
                   <div>
@@ -129,29 +130,49 @@
                 
                </div>
             
-          </div>
+          
         </section>
         <section class="d-none d-md-block container">
-          <div id="carouselExampleInterval" class="carousel slide-container" data-bs-ride="carousel">
+          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
             <div class="carousel-inner">
-              <div class="carousel-item active" data-bs-interval="5000">
-                <img src="./images/carrusel_1.webp" class="d-block w-100" alt="Promocion 1">
+              <div class="carousel-item active"  data-bs-interval="5000">
+                <a href="./pages/eventos.html"><img src="./images/carrusel_6.webp" class="d-block w-100" alt="Oferta de regreso escolar"></a>
+                <div class="carousel-caption d-none d-md-block">
+                  <h4 >¡Semana  de regreso escolar!</h4>
+                  <p >Inscribe a tus hijos en nuestras escuelas de formación y ten la posibilidad de ganar una membresía premium.</p>
+                </div>
               </div>
-              <div class="carousel-item" data-bs-interval="5000">
-                <img src="./images/carrusel_2.webp" class="d-block w-100" alt="Promocion 2">
+              <div class="carousel-item"  data-bs-interval="5000">
+                <a href="./pages/canchas.html"><img src="./images/carrusel_1.webp" class="d-block w-100" alt="Oferta de Lunes"></a>
+                <div class="carousel-caption d-none d-md-block">
+                  <h4>¡Lunes madrugador!</h4>
+                  <p>Disfruta de un 10% al reservar en los primeros horarios de las canchas</p>
+                </div>
               </div>
-              <div class="carousel-item" data-bs-interval="5000">
-                <img src="./images/carrusel_3.webp" class="d-block w-100" alt="Promocion 3">
+              <div class="carousel-item"  data-bs-interval="5000">
+                <a href="./pages/registro.html"><img src="./images/carrusel_5.webp" class="d-block w-100" alt="Promoción de jugadores"></a>
+                <div class="carousel-caption d-none d-md-block">
+                  <h4 >¡Se un  nuevo Director técnico!</h4>
+                  
+                  <p >Aprovecha un 10% de descuento en la reserva de tus 10 primeros partidos.</p>
+                </div>
+              </div>
+              <div class="carousel-item"  data-bs-interval="5000">
+                <a href="./pages/contacto.html"><img src="./images/carrusel_4.webp" class="d-block w-100" alt="Promoción de jugadores"></a>
+                <div class="carousel-caption d-none d-md-block">
+                  <h4>¡Se parte de los jugadores de La recocha!</h4>
+                  
+                  <p>Trabaja con nosotros y obtén grandes beneficios.</p>
+                </div>
               </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+            
           </div>
         
         </section>
