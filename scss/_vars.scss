@@ -9,6 +9,7 @@ $yellow:  #ffc107;
 $green:   #00412b;
 $teal:   #124e6a;
 $cyan:    #0dcaf0;
+
 $primary:       $green;
 $secondary:     $teal;
 $success:       $green;
@@ -19,7 +20,7 @@ $light:         $cyan;
 $dark:          $teal;
 $theme-colors: (
   "primary":    $primary,
-  "secondary":  $secondary,
+  "secondary":  $teal,
   "success":    $success,
   "info":       $info,
   "warning":    $warning,
